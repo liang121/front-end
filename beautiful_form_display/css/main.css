@@ -1,0 +1,70 @@
+
+		a:link    {color:green; background-color:transparent; text-decoration:none}
+		a:hover{
+			color:red;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		.headFont{
+		  	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+		  	text-align:center;
+		  	font-size: 30px;
+	  }
+	  	.contentStyle{
+		  	font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+			font-size: 18px;
+			line-height: 30px;
+			color:#4D4DFF;
+			padding-left:25px;
+			padding-right:25px;
+	  }
+		#main_div{
+		  	background-color:#FBFBFB;
+		  	width:650px;
+		  	height:2500px;
+		  	margin-left:auto;
+		  	margin-right:auto;
+		  	border:5px solid red;
+	  }
+
+		p {
+			margin-top: -3px;
+		  	margin-left: 70px;
+	  	
+      }
+    	h2{
+	      	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+		  	text-align:left;
+		  	font-size: 20px;
+		  	color:#4D4DFF;
+      }
+
+		input{
+		  	font-size: 15px; 	
+		  	padding:1.5px;
+		  	width: 240px;
+	  }
+	  	p textarea{
+	  		resize:none;
+	  }
+	  form div input{
+	  		width:100px;
+		  	background-color:#FF9933;
+	  }
+
+  	 [type=checkbox]{
+			width:20px;
+
+	  }
+	  figcaption{
+	  		color:black;
+	  		font-size:15px;
+	  }
+	  figcaption::first-letter{
+	  	color:red;
+	  }
+	  figure > img{
+		width:152px; 
+		height:114px;
+	  }

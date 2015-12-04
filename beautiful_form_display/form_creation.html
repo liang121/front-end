@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<title>Form Creation</title>
+	<link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body style="background-image:url(../enhanced_display/images/mobile/ads.jpg);no-repeat;background-size:100%">
+
+	<div style="float:left">
+		<iframe  width="300px" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/216772566&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" ></iframe>
+	</div>
+
+	<div id="main_div"> 
+		<h1 class="headFont">Customer's <span style="color:#FF4719"><em> Membership</em> </span> Application Form</h1>
+		<div class="contentStyle">
+			<p><hr/></p>
+			<h2>Candidates Information:</h2>
+			<form >
+				Name:
+				<p><input type="text" name="name" placeholder="type your fullname"></p>
+				Birthday</p>
+	  			<p><input type="date" name="day"></p>
+				Gender:
+	  			<p><input  type="radio" name="sex" value="Male" checked style="width:30px"> <span style="margin-right:10px">Male<span>&nbsp
+	  			<br>
+	  			<input type="radio" name="sex" value="Female" style="width:30px"><span style="margin-right:10px">Female</span></p>
+				Cell phone:
+				<p><input type="tel" name="phone" placeholder="type your phone number"></p>
+				Email address:
+				<p><input type="email" name="email" placeholder="type your email address"></p>
+				Password:
+		  		<p><input type="password" name="password" placeholder="type your password"></p>
+		  		Repeat password:
+		  		<p><input type="password" name="repassword" placeholder="type your password again"></p>
+		  		Current occupation:
+		  		<p><input type="text" name="occupation" placeholder="typy your occupation"></p>
+		  		Social security number:
+		  		<p><input type="text" name="ssn" placeholder="your ssn number"></p>
+		  		What's your annual income:
+				<p>0 <input style="padding-top:5px; " type="range" name="min" min="0" max="9999999"> 9999999</p>	
+				Upload Photo ID:
+				<p><input type="file" name="photo_ID"></p>
+				How do you know us?
+	  			<p><input list="source" name="info_src" placeholder="--selected--"></p>
+	  		 	<datalist id="source" value="i_s">
+					<option value="Google">
+					<option value="Amazon">
+					<option value="Facebook">
+					<option value="Linkedin">
+				</datalist>
+				Brief introduction of yourself?
+				<p><textarea textarea rows="6" cols="50"></textarea></p>
+				Why do you want to join us?
+				<p><textarea textarea rows="6" cols="50"></textarea></p>
+				What services do you interested in?
+				<p><input type="checkbox" name="services" value="serv1"> Book 3000 five star hotels in 120 countries worldwide within 1 minute!
+				<br>
+				<input type="checkbox" name="services" value="serv2"> Pickup limo services in 2000 airports worldwide!
+				<br>
+				<input type="checkbox" name="services" value="serv3"> First class flight in 60 partner airlines !
+				<br>
+				<input type="checkbox" name="services" value="serv4"> 15+ Most priority credit card service without annual fee !
+				&nbsp;<div style="margin-left:100px">
+					<input type="submit" name="sub" value="Submit" >
+					<input type="reset" name="reset" value="Reset" >
+					<a href="#top"><input type="button" value="Go To Top"></a>
+				</div>
+				<p style="padding-top:50px"><hr/></p>
+	  		</form>
+		</div>
+
+		<div class="contentStyle" >
+			<h2>About us:</h2>
+	  		<iframe width="100%" height="400" src="https://www.youtube.com/embed/1pFPZHOSwBo" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<div class="contentStyle">
+			<p><hr/></p>
+			<h2>Sign in bonus:</h2>
+			Get a free gift when you first sign in!!
+			<table style="text-align:center">
+				<td style="text-align:center">
+					<figure>
+					<img src="images/alienware.jpg" alt="laptop" >
+					<figcaption >Fig&#46;&#49; Alienware FHD 15&#46;6Inch <br>Gaming Laptop.<br><a href="http://www.amazon.com/Alienware-15-6-Inch-Gaming-Laptop-GeForce/dp/B00XQXZ41S/ref=sr_1_3?s=pc&ie=UTF8&qid=1444513308&sr=1-3&keywords=alienware">see item in website</a></figcaption>
+					</figure>
+				</td>
+				<td style="text-align:center">
+					<figure>
+					<img src="images/camera.jpg" alt="nikon">
+					<figcaption >Fig&#46;&#50; Nikon D610 24&#46;3 MP CMOS <br>FXFormat Digital SLR Kit.<br><a href="http://www.amazon.com/FX-Format-Digital-28-300mm-3-5-5-6G-Nikkor/dp/B00FXY2D8K/ref=sr_1_4?s=pc&ie=UTF8&qid=1444513194&sr=1-4&keywords=nikon">see item in website</a></figcaption>
+					</figure>
+				</td>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
