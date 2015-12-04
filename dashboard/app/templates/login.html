@@ -1,0 +1,14 @@
+
+<div style="margin:0px;back"  ng-controller="loginCtrl" class="login">
+	<div id="back">
+		<div id="loginDiv">
+			<form name="login">
+				<span style="font-size: 25px;">Login</span><hr/>
+				<div class="alert alert-danger" role="alert" ng-show = "errorMsg">{{errorMsg}}</div>
+				<input type="text" ng-model="username" class="form-control" placeholder="Username:" required ><br>
+				<input type="password" ng-model="password" class="form-control" placeholder="Password:" required><br>
+				<button type="submit" class="btn btn-info" ng-click="submit()" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 20px;">Login</span></button>
+			</form>
+		</div>
+	</div>	
+</div>

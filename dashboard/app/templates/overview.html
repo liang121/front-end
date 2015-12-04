@@ -1,0 +1,21 @@
+<h1>Overview</h1>
+<div class="jumbotron" ng-controller="overview" id="overview">
+    <span id="userHead">{{userName + " - " + userNick}}<br><br></span>
+    <img src={{imgUrl}} style="width:20%;display:block">
+    <br>
+    <br>
+    <p>Welcome to dashboard application. this application guide will introduce you to things that you can do while staying here. All the sections mentioned below can be accessed from the navigation menu on the left side</p>
+    <div>
+        <uib-accordion close-others="oneAtATime">
+            <uib-accordion-group heading="Work Section" is-disabled="status.isFirstDisabled">
+                <span>This section contains the demonstration for all the final products that has been produced in the market</span>
+            </uib-accordion-group>
+            <uib-accordion-group heading="Producer Section" is-disabled="status.isFirstDisabled">
+                <span>This section contains information about the creator of all the works and how to get in touch with them</span>
+            </uib-accordion-group>
+            <uib-accordion-group heading="Contact Section" is-disabled="status.isFirstDisabled">
+                <span>This section provides a gateway for users to voice out opinions regarding the application and any other questions or concerns that one might have.</span>
+            </uib-accordion-group>
+        </uib-accordion>
+    </div>
+</div>

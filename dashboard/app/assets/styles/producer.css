@@ -1,0 +1,188 @@
+.producer{
+	background: #f9f9f9;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    width: 100%
+}
+.producer #headDiv{
+	width:100% ;
+	height: 300px;
+	background-image: url("../images/app/gigs.jpg");
+	background-size: 100%;
+	text-align: center;
+}
+.producer #headDiv div{
+	width:40%;
+	height:300px;
+	float: right;
+	background-color: rgba(0,0,0,0.5);
+	
+}
+.producer #headDiv span:nth-child(1){
+	margin-top: 30%;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	display: block;
+}
+.producer #headDiv span:nth-child(2){
+	color: red;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 0;
+	font-style: italic;
+	display: block;
+	margin-left: 30%;
+	display: block;
+}
+
+.producer #nav{
+	color:black;
+	font-family: 'Crimson Text', Georgia, Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid orange; 
+	background-color: white;
+}
+.producer #nav span{
+	transition:0.5s;
+	padding: 15px 15px;
+	display: inline-block;
+}
+.producer #nav span:hover{
+	background-color: #ff3333;
+	border-radius: 5px;
+	color: white;
+	cursor:pointer;
+}
+.producer #rightSide{
+	width: 32%;
+	float: right;
+}
+.producer #leftSide{
+	width: 65%;
+	margin-top: 30px;
+	float: left;
+}
+.producer #leftSide div{
+	margin-bottom: 40px;
+	border:1px solid #e6e6e6;
+	background-color: white;
+	padding: 2% 2%;
+	position: relative;
+}
+.producer #leftSide div div{
+	display: inline;
+	width: 50%;
+	margin-left:5% ;
+	position:absolute;
+	border-style:none;
+	top:2%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.producer #map span:nth-child(2){
+	color: orange;
+	font-family: 'Crimson Text', Georgia, Times, serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left:10px;
+	display: block;
+	
+}
+.producer .well{
+	background-color: white;
+}
+.producer #map{
+	margin-top: 30px;
+	width:100%;
+	padding: 1% 1%;
+	border:1px solid #e6e6e6;
+	background-color: white;
+	position:relative;
+	text-align: center;
+	border-radius: 3px;
+}
+.producer #googleMap{
+	width: 100%;
+	height:300px;
+	display: block;
+	margin-top: 10px;
+}
+
+.producer .controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.producer #pac-input {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 11px 0 13px;
+}
+
+.producer #pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.producer .pac-container {
+  font-family: Roboto;
+}
+
+.producer #map .glyphicon {
+	font-size: 25px;
+	color: black;
+	padding: 10px 10px; 
+	transition:0.5s;
+}
+.producer #map .glyphicon:hover {
+	color: white;
+	background-color:#ff3333;
+	border-radius: 100%;
+	cursor:pointer;
+
+}
+
+.animate-show {
+  line-height: 20px;
+  padding: 10px;
+  background: white;
+}
+
+ .animate-show.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.animate-show.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+.producer #videoContent{
+	
+}
+
+.producer .full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }
+.producer .partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+  }
+

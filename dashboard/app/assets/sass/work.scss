@@ -1,0 +1,128 @@
+.body {
+    position: relative;
+    width: 100%;
+    font-family: 'Crimson Text', Georgia, Times, serif;
+}
+
+.content span a,
+td a {
+    color: SteelBlue;
+    text-decoration: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+td,
+th {
+    height: 50px;
+    padding-left: 1%;
+}
+
+th {
+    text-align: left;
+}
+
+th a {
+    text-decoration: none;
+    color: black;
+}
+
+th a:hover {
+    color: grey;
+}
+
+tbody td {
+    border-top: 1px solid lightgrey;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    padding: 0px;
+}
+
+.sublist {
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: absolute;
+    background-color: white;
+    /*top: 25px;*/
+    width: 50px;
+    box-shadow: 0px 2px 3px 2px #ccc;
+    list-style-type: none;
+    font-size: 20px;
+    width: 200px;
+}
+
+.sublist li {
+    margin-left: -40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.sublist li:hover {
+    background-color: WhiteSmoke;
+}
+
+.filter {
+    float: right;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.content-card {
+    margin: auto;
+    width: 95%;
+}
+
+.content {
+    width: 31.3%;
+    margin: 1% 1% 1% 1%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+}
+
+.tb {
+    font-size: 20px;
+}
+
+.tb tr:nth-child(even) {
+    background-color: WhiteSmoke;
+}
+
+.author {
+    color: MediumSeaGreen;
+    text-decoration: none;
+}
+
+.author:hover {
+    color: SteelBlue;
+}
+
+#design {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: SteelBlue;
+    border-radius: 5px;
+}
+
+#add {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 20px;
+    background-color: Tomato;
+    border-radius: 5px;
+}

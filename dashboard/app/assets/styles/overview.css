@@ -1,0 +1,31 @@
+#overview h1 {
+    font-weight: bold;
+}
+
+.jumbotron {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 10px;
+}
+
+#overview p {
+    font-size: 17px;
+}
+
+#overview .scrollContent {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#overview .panel-title {
+    font-weight: bold;
+}
+
+#overview .panel {
+    margin-bottom: 20px;
+}
+
+#overview #userHead {
+    font-size: 17px;
+    font-weight: bold;
+}

@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../assets/styles/work.css">
+	<script src="../../bower_components/angular/angular.js"></script>
+	<script src="../../bower_components/angular/angular.min.js"></script>
+</head>
+<body>
+<div class="body" ng-app="DashboardApp" ng-controller="userInfo"> -->
+<div class="body" ng-controller="WorkCtrl">
+    <!-- <div class="body"> -->
+    <div class="container-fluid">
+        <div class="nav row">
+            <div class="functionbtn col-xs-12 col-md-12 col-lg-3">
+                <a href="" id="design" ng-click="showList()">Select Design <span>▼</span></a> <a href="" id="add" ng-click="addItem()">Add Item</a>
+                <ul class="sublist" ng-show="visible" onselectstart="return false;">
+                    <li ng-click="setList()">List</li>
+                    <li ng-click="setCard()">Card</li>
+                </ul>
+            </div>
+            <div class="filterform col-xs-12 col-md-12 col-lg-9  row">
+                <input class="filter col-xs-12 col-md-2 col-lg-2 col-lg-offset-3" type="text" placeholder="Name" ng-model="search.title">
+                <input class="filter col-xs-12 col-md-2 col-lg-2" type="text" placeholder="Author" ng-model="search.author">
+                <input class="filter col-xs-12 col-md-2 col-lg-2" type="text" placeholder="Like" ng-model="search.like">
+                <input class="filter col-xs-12 col-md-2 col-lg-2" type="text" placeholder="Comment" ng-model="search.comment">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="content-card" ng-show="cardShow">
+        <div class="content" ng-repeat="content in contents | filter: search track by $index">
+            <img ng-src="../{{content.image}}" style="width:100%">
+            <br>
+            <h3 style="margin-top:0;">{{content.title}}</h3>
+            <a href="" class="author">{{content.author}}</a>
+            <br>
+            <span>{{content.like}}</span>
+            <br>
+            <span>{{content.comment}}</span>
+            <br>
+            <span style="float:right"><a href="" ng-click="editItem()">Edit</a> | 
+			<a href="" ng-click="delItem()">Delete</a></span>
+        </div>
+    </div>
+    <div class="content-list" ng-show="listShow" style=" width=100%;">
+        <table class="tb" cellspacing="0" style="width:100%">
+            <tbody>
+                <tr>
+                    <th><a href="">Name</a></th>
+                    <th><a href="">Author</a></th>
+                    <th><a href="">Like</a></th>
+                    <th><a href="">Comment</a></th>
+                    <th><span>Modify</span></th>
+                    <th><span>Remove</span></th>
+                </tr>
+                <tr ng-repeat="content in contents | filter: search track by $index">
+                    <td>{{content.title}}</td>
+                    <td>{{content.author}}</td>
+                    <td>{{content.like}}</td>
+                    <td>{{content.comment}}</td>
+                    <td><a href="" ng-click="editItem()">Edit</a></td>
+                    <td><a href="" ng-click="delItem()">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/controllers/work.js"></script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<div style="margin:0px" class="root" ng-controller="userInfo">
+    <div id="cover" ng-show="backcoverShow">
+        <div id="addItem" ng-show="addShow">
+            <span style="font-size: 25px;">Add item</span>
+            <form name="add">
+                <input type="text" ng-model="addTitle" class="form-control" placeholder="Title" required>
+                <input type="text" ng-model="addAuthor" class="form-control" placeholder="Author" required>
+                <input type="text" ng-model="addLike" class="form-control" placeholder="Like" required>
+                <input type="text" ng-model="addComment" class="form-control" placeholder="Comment" required>
+                <button type="submit" class="btn btn-success" ng-click="addSubmit('submit')" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 17px;">submit</span></button>
+                <button type="submit" class="btn btn-default" ng-click="addSubmit('cancel')" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 17px;color:black">cancel</span></button>
+            </form>
+        </div>
+        <div id="editItem" ng-show="editShow">
+            <span style="font-size: 25px;">Edit item</span>
+            <form name="edit">
+                <input type="text" ng-model="editTitle" class="form-control" placeholder="Title" required>
+                <input type="text" ng-model="editAuthor" class="form-control" placeholder="Author" required>
+                <input type="text" ng-model="editLike" class="form-control" placeholder="Like" required>
+                <input type="text" ng-model="editComment" class="form-control" placeholder="Comment" required>
+                <button type="submit" class="btn btn-success" ng-click="editSubmit(1)" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 17px;">submit</span></button>
+                <button type="submit" class="btn btn-default" ng-click="editSubmit(0)" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 17px;color:black">cancel</span></button>
+            </form>
+        </div>
+        <div id="deleteItem" ng-show="delShow">
+            <span style="font-size: 25px;">Delete item?</span>
+            <hr>
+            <span>This will permanently delete the item from the table and the action cannot be reversed. If you are sure, please confirm with the appropriate action</span>
+            <hr>
+            <button type="submit" class="btn btn-success" ng-click="delete(1)" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 17px;">submit</span></button>
+            <button type="submit" class="btn btn-default" ng-click="delete(0)" ng-disabled="login.$invalid"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 17px;color:black">cancel</span></button>
+        </div>
+    </div>
+    <div id="navbar">
+        <nav>
+            <img src="../assets/images/app/logo.png">
+            <div>
+                <span style="margin-left:20px"></span>
+                <span style="margin-left:5px;"></span>
+            </div>
+            <button type="button" class="btn btn-success" ng-click="logout()">Log Out</button>
+        </nav>
+    </div>
+    <div id="sidebar">
+        <ul class="list-unstyled">
+            <li id="ov" ui-sref-active="active"><span class="glyphicon glyphicon-cloud"></span> &nbsp;<span ui-sref="root.overview"> Overview</span></li>
+            <li id="work" ui-sref-active="active"><span class="glyphicon glyphicon-tag"></span> &nbsp;<span ui-sref="root.work"> Work</span></li>
+            <li id="producer" ui-sref-active="active"><span class="glyphicon glyphicon-tint"></span> &nbsp;<span ui-sref="root.producer"> Producer</span></li>
+            <li ui-sref-active="active"><span class="glyphicon glyphicon-th-large"></span> &nbsp;<span ui-sref="root.contact"> Contact</span></li>
+        </ul>
+    </div>
+    <div id="content" ui-view></div>
+</div>
+</div>
