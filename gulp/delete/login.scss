@@ -1,0 +1,46 @@
+
+// Converted Variables
+
+
+// Custom Media Query Variables
+
+
+
+body{
+	background-image: url("../images/app/background2.jpg");
+
+	background-attachment: fixed;
+}
+#loginDiv div{
+	width: 500px;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center;
+	color:white;
+	font-family: 'Crimson Text',Georgia, Times, serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+#loginDiv span{
+	width: 500px;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center;
+	color:white;
+	font-family: 'Crimson Text',Georgia, Times, serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+div input,div button{
+	width: 100%;
+}
+button span,.form-control::-webkit-input-placeholder { 
+	font-family:'Crimson Text',Georgia, Times, serif; 
+	font-size: 16px;
+}
+.form-control:-moz-placeholder { font-family: 'Crimson Text',Georgia, Times, serif; 
+	font-size: 16px; }
+.form-control::-moz-placeholder { font-family: 'Crimson Text',Georgia, Times, serif; 
+	font-size: 16px; }
+.form-control:-ms-input-placeholder { font-family: 'Crimson Text',Georgia, Times, serif; 
+	font-size: 16px; }
