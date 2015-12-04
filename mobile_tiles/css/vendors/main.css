@@ -1,0 +1,106 @@
+        p {
+            font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+            font-size: 22px;
+            line-height: 25px;
+        }
+        button{
+            padding:5px;
+            border-radius:7px;
+            background-color:#0099FF;
+            color:white;
+            border:0px;
+        }
+        h1 {
+            font-family: 'Raleway', Helvetica, Arial, sans-serif;
+            font-size: 35px;
+            line-height: 70px;
+            display: inline-block;
+        }
+        .pic_div{
+            display:inline-block;
+            position:relative;
+            width:24.3%;
+            height:190px;
+            no-repeat;
+            background-size:100%;
+            border-style:solid;
+            border-width:2px;
+            border-color:white;
+        }
+        #content{
+            width:800px;
+            margin-left: auto;
+            margin-right: auto;
+            position:relative;
+            text-align:center;
+        }
+        #logo{
+            width:30%;
+            height:auto;
+              
+        }
+        #head{
+            position:relative;
+            width:810px;
+            margin-left:auto;
+            margin-right:auto;
+            text-align:left;
+        }
+        #footer{
+            width:800px;
+            margin:auto;
+            position:relative;
+            
+            
+        }
+        #tool{
+            position:absolute;
+            right:0px;
+            top:80px;
+        }
+        #tool:hover{
+            content: url('../../images/icons/gear_h.png');
+        }
+        #done{
+            display: inline-block;
+            position:relative;
+            left:320px; 
+            font:30px;
+            width:80px;
+        }
+        #second_page{
+            display: none;
+            position:absolute;
+            width:100%;
+            background-color:#E8E8E8;
+        }
+        #sec_content{
+             position:relative;
+             width:600px;
+             padding-bottom:20px;
+             margin-left:auto;
+             margin-right:auto;
+             background-color:white;
+             padding-left:30px;
+             padding-right:30px;
+        }
+        #sec_footer{
+            position:relative;
+            width:600px;
+            height:auto;
+            margin-left:auto;
+            margin-right:auto;
+            background-color:#4747A3;
+            padding:30px 30px;
+        }
+        #first_page{
+            background-color:#545495;
+            position: relative;
+        }
+        #sortable{
+            position:relative;
+        }
+        .able{
+            position:absolute;
+            right:30px;
+        }

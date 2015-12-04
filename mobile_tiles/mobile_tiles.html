@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mobile tiles</title>
+    <link href="css/vendors/normalize.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/vendors/main.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="js/vendors/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/vendors/jquery-ui-1.11.4.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
+
+</head>
+<body >
+    <div id="first_page">
+        <div id="head">
+            <img  src="images/logo/logo.gif" id="logo">
+            <img  src="images/icons/gear.png" id="tool">
+        </div>
+        <div id="content"></div>
+        <div id="footer"><img src="images/ads/ads.jpg" style="width:800px;"></div>
+    </div>
+
+    <div id="second_page">
+        <div id="sec_content">
+            <h1>Personalize</h1>
+            <button id="done">Done</button>
+            <p style="text-align:center">Tap the check marks to Add/Remove categories from your Home Screen. Tap and hold the<img src="images/icons/stack.png" style="position:relative;top:10px"> to recorder catergory tiles</p>
+            <p><hr></p>
+            <p style="text-align:center">Wants more local news? Tap here</p>
+            <hr>
+            <div id="sortable" ></div>
+        </div>
+        <div id="sec_footer">
+            <button style="position:absolute;left:175px;bottom:15px">Categories</button>
+            <button style="position:absolute;left:265px;bottom:15px">Report News to AP</button>
+            <button style="position:absolute;right:178px;bottom:15px">Settings</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/custom/mobile_tiles.js"></script>
+</body>
+</html>
