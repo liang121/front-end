@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>root</title>
+	<link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  	<script src="../../bower_components/angular/angular.min.js"></script>
+  	<script src="../../bower_components/angular-cookies/angular-cookies.min.js"></script>
+	<script src="../../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  	<script src="../scripts/controllers/root.js"></script>
+  	<link rel="stylesheet" type="text/css" href="../assets/styles/sidebar.css">
+  
+</head>
+<body style="margin:0px" ng-app="root_partial" ng-controller = "Logout">
+	<div id="navbar">
+		<nav>
+			<img src="../assets/images/app/logo.png">
+			<div>
+				<span style="margin-left:20px"></span>
+				<span style="margin-left:5px;"></span>
+			</div>
+			<button type="button" class="btn btn-success" ng-click="logout()">Log Out</button>
+		</nav>
+	</div>
+	<div id = "sidebar" ng-controller="userInfo">
+		<ul class="list-unstyled">
+			<li id="ov"><span class="glyphicon glyphicon-cloud"></span> &nbsp;<span ui-sref="overview"> Overview</span></li>
+			<li id="work"><span class="glyphicon glyphicon-tag"></span> &nbsp;<span ui-sref="work"> Work</span></li>
+			<li id="producer"><span class="glyphicon glyphicon-tint"></span> &nbsp;<span ui-sref="producer"> Producer</span></li>
+			<li><span class="glyphicon glyphicon-th-large"></span> &nbsp;<span ui-sref="contact"> Contact</span></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("ul li").click(function(){
+				$("ul li").css("color","black");
+				$(this).css("color","#FF471A");
+			})
+			
+		});
+		
+	</script>
+	<div id = "content" ui-view></div>
+</body>
+</html>

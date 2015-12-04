@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-cookies/angular-cookies.min.js"></script>
+	<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  	<script src="scripts/controllers/login.js"></script>
+  	<link rel="stylesheet" type="text/css" href="../assets/styles/login.css">
+</head>
+<body style="margin:0px;back" ng-app="Login" ng-controller="loginCtrl">
+	<div id="back">
+		<div id="loginDiv">
+			<form id="login">
+				Login<hr/>
+				<input type="text" ng-model="username" class="form-control" placeholder="Username:" ><br>
+				<input type="password" ng-model="password" class="form-control" placeholder="Password:"><br>
+				<button type="submit" class="btn btn-info" ng-click="submit()"><span style="font-family: 'Crimson Text',Georgia, Times, serif; font-size: 20px;">Login</span></button>
+			</form>
+		</div>
+	</div>	
+</body>
+</html>
+
+<!DOCTYPE html>
+<!-- <html ng-app="Login">
+<head>
+	<title>login</title>
+	<link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-cookies/angular-cookies.min.js"></script>
+	<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="scripts/app.js"></script>
+</head>
+<body style="margin:0px;back" >
+	<div ui-view>
+
+	</div>	
+</body>
+</html> -->
